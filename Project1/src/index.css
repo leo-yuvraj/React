@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Dosis-Bold";
+    src: local("Dosis-Bold"),
+     url("./FONTS/dosis/static/Dosis-Bold.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: "PoiretOne";
+    src: local("PoiretOne"),
+    url("./FONTS/PoiretOne/PoiretOne-Regular.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+*{
+    box-sizing: border-box; 
+    font-family: "Dosis-Bold";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 227, 227);    
+}
+
+.head{
+    display: block;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.head-img{
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.heading{
+    background-color: rgb(0, 3, 3);
+    overflow: auto;
+    top:0;
+    position: fixed;
+    width: 100%;
+}
+
+.head-list{
+    display: block;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+.head-list a{
+    color: whitesmoke;
+    padding-right: 30px;
+    float: right;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.head-list a:hover{
+    color: rgb(75, 51, 51);
+}
+
+#search{
+    width: 500px;
+    height: 35px;
+    border-radius: 4px;
+    margin-right: 100px;
+}
+
+.body-bg{
+    margin-top: 80px; 
+    /* display: flex;  */
+}
+
+
+.body-bg{
+    background-image: url('../public/wall.jpeg');
+    margin-left: 6px;
+    width: 97.5vw;
+    height: 87.6vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* position: relative; */
+} 
+
+.body-head{
+    margin-left: 27%;
+    padding-top: 10px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    /* font-family:"PoiretOne-Regular"; */
+}
+
+.arrival:hover{
+    letter-spacing: 0.8px;
+}
+
+.body-cont>p{
+    color: beige;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 50px;
+    max-width: 400px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+.body-cont > button{
+    background-color: transparent;
+    width: 130px;
+    height: 40px;
+    margin-left: 120px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.body-cont>button:hover{
+    background-color: rgb(225, 226, 228);
+}
+
+.body-right{
+    display: flex;
+    float: right;
+    font-size: 60px;
+    max-width: 500px;
+}
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
+}
+
+.card--price {
+    margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.arrival{
+    margin-left:43%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-div{
+    display: flex;
+    margin-left: 14%;
+}
+
+#contact:hover{
+    letter-spacing: 0.8px;
+}
+
+.container {
+    /* position: relative; */
+    display: flex;
+    /* width: 50%; */
+    width: 200px;
+    margin:20px 100px 20px 20px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 230px;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.5;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin-left: 220px;
+}
+
+.men{
+    margin-left: 47%;
+    text-decoration:double;
+    font-size: 35px;
+    display: inline;
+    cursor: pointer;
+}
+
+.men:hover{
+    letter-spacing: 1.2px;
+}
+
+#directwomen{
+    margin-left: 45%;
+    text-decoration:double;
+    font-size: 35px;
+    display: inline;
+    cursor: pointer;
+}
+
+#directwomen:hover{
+    letter-spacing: 1.2px;
+}
+
+#directkids{
+    margin-left: 47%;
+    text-decoration:double;
+    font-size: 35px;
+    display: inline;
+    cursor: pointer;
+}
+
+#directkids:hover{
+    letter-spacing: 1.2px;
+}
+
+.cards-list1 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card1 {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.card--image1 {
+    width: 100%;
+    height: 250px;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card--title1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--stats1 {
+    display: flex;
+    align-items: center;
+}
+
+.card--star1 {
+    height: 14px;
+}
+
+/* ADD */
+.card--price1 {
+    margin-top: auto;
+}
+
+.card--badge1 {
+    /* position: absolute; */
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.form-main{
+    display: flex;
+}
+
+.main-under{
+    padding-top: 200px;
+    /* padding-left: 20%; */
+    /* max-width: 50%; */
+    font-size: 40px;
+}
+
+.some{
+    margin-top: 53%;
+}
+
+.sign{
+    margin-left: 45%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#forms{
+    background-color: rgb(131, 115, 115);
+}
+
+.form{
+    background-image: url('./images/form1.jpeg');
+    background-repeat: no-repeat;
+    height:580px;
+    width:100%;
+    margin-top: 20px;
+}
+
+.form-text{
+    padding-top: 180px;
+    margin-left: 20%;
+    color: white;
+    font-size: 22px;
+}
+
+.form-input{
+    margin-top: 15px;
+    margin-left: 10%;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+form>button{
+    margin-top: 10px;
+    margin-left: 13%;
+    width: 25%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+form>button:hover{
+    background-color: rgb(21, 21, 27);
+    color: azure;
+}
+
+.form-check{
+    margin-top: 0;
+    margin-left: 14%;
+}
+
+form>label{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.signup_img{
+    width: 100%;
+    position: relative;
+}
+
+.foot-head{
+    font-size: 30px;
+    margin-left: 43%;
+    margin-bottom: 0;
+}
+
+.footer{
+    display: flex;
+}
+
+/* .foot-main{
+    margin-top: 0;
+    background-color: rgb(131, 115, 115);
+} */
+
+.foot-left{
+    max-width: 600px;
+    margin-top: 19px;
+}
+
+.foot-right{
+    margin-left: 400px;
+}
+
+.foot-img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.foot-img:hover{
+    opacity: 0.6;
+}
